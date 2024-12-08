@@ -6,7 +6,7 @@
 Ссылки на источники:
 - https://data.mos.ru/opendata/2527?pageSize=10&pageIndex=0&version=1&release=1664
 - https://data.mos.ru/opendata/62101?pageSize=10&pageIndex=0&isRecommendationData=true&isDynamic=false&version=2&release=101
-- 
+
 Также рассматривается интеграция с API Яндекс Карт для получения актуальной информации о пробках для анализа корреляции с ними дорожных работ.
 
 ## 2. Предобработка данных
