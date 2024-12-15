@@ -41,10 +41,10 @@ try:
     save_db_time = time.time() - start_time
     print(f"Loading in DB completed successfully in {save_db_time:.2f} seconds")
 
-    # start_time = time.time()
-    # analysis.analyse(df)
-    # analysis_time = time.time() - start_time
-    # print(f"Analysis completed successfully in {analysis_time:.2f} seconds")
+    start_time = time.time()
+    analysis.analyse(df)
+    analysis_time = time.time() - start_time
+    print(f"Analysis completed successfully in {analysis_time:.2f} seconds")
 
     start_time = time.time()
     report = quality.quality(df)
