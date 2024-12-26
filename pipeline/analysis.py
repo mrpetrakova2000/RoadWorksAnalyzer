@@ -1,4 +1,5 @@
 import os
+import shutil
 import re
 from datetime import datetime
 
@@ -232,7 +233,7 @@ def analyse(input_df):
                 popup=f"{row['Address']} ({row['WorksType']})"
             ).add_to(layer_groups[adm_area])
 
-    for layer in layer_groups.values():
+    for k,layer in sorted(layer_groups.items()):
         layer.add_to(m)
     # Добавление переключателя слоев
     folium.LayerControl().add_to(m)
@@ -267,10 +268,8 @@ def analyse(input_df):
                 popup=f"{row['Address']} ({row['WorksType']})"
             ).add_to(layer_groups[district])
 
-    for layer in layer_groups.values():
+    for k,layer in sorted(layer_groups.items()):
         layer.add_to(m)
-    # Добавление переключателя слоев
-    folium.LayerControl().add_to(m)
     # Сохранение карты
     m.save(save_path)
 
@@ -302,7 +301,7 @@ def analyse(input_df):
                 popup=f"{row['Address']} ({row['WorksType']})"
             ).add_to(layer_groups[worksStatus])
 
-    for layer in layer_groups.values():
+    for k,layer in sorted(layer_groups.items()):
         layer.add_to(m)
     # Добавление переключателя слоев
     folium.LayerControl().add_to(m)
@@ -336,10 +335,15 @@ def analyse(input_df):
                 weight=3,
                 popup=f"{row['Address']} ({row['WorksType']})"
             ).add_to(layer_groups[months])
+
     for k,layer in sorted(layer_groups.items()):
         layer.add_to(m)
     # Добавление переключателя слоев
     folium.LayerControl().add_to(m)
     # Сохранение карты
     m.save(save_path)
-    
+
+    src = os.path.join("analysis", "dashbord_template" + '.html')
+    dst = os.path.join(dir_path, "dashbord" + '.html')
+    print("Dashbord in " + dst)
+    shutil.copyfile(src, dst)
