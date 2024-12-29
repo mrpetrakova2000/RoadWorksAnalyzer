@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RoadWorksAnalyzer</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fdfbe9;
+      }
+      .container {
+        width: 85%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+
+      .container p,
+      .container a,
+      .container span {
+        font-size: 18px;
+      }
+
+      .container h1 {
+        font-size: 40px;
+      }
+
+      .container h2 {
+        font-size: 26px;
+      }
+
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #d1cda3;
+      }
+
+      .card {
+        margin-bottom: 50px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>RoadWorksAnalyzer Dashbord</h1>
+
+      <nav>
+        <ul class="toc">
+          <li>
+            <a href="#charts">Графики</a>
+            <ul>
+              <li><a href="#chart1">Количество начатых работ по месяцам</a></li>
+              <li>
+                <a href="#chart2">Количество выполненных работ по месяцам</a>
+              </li>
+              <li>
+                <a href="#chart3">Количество активных работ по месяцам</a>
+              </li>
+              <li>
+                <a href="#chart4">Доля работ, которые начались позже срока</a>
+              </li>
+              <li>
+                <a href="#chart5"
+                  >Количество работ, начатых в срок и позже срока</a
+                >
+              </li>
+              <li>
+                <a href="#chart6"
+                  >Доля работ, законченных в срок и позже срока</a
+                >
+              </li>
+              <li>
+                <a href="#chart7"
+                  >Количество работ, законченных в срок и позже срока</a
+                >
+              </li>
+              <li>
+                <a href="#chart8">Количество ремонтируемых дорог по округам</a>
+              </li>
+              <li>
+                <a href="#chart9">Количество ремонтируемых дорог по районам</a>
+              </li>
+              <li>
+                <a href="#chart10">Длина ремонтируемых дорог по округам</a>
+              </li>
+              <li>
+                <a href="#chart11">Длина ремонтируемых дорог по районам</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#maps">Карты</a>
+            <ul>
+              <li><a href="#map1">Карта. Выбор по окргам</a></li>
+              <li><a href="#map2">Карта. Выбор по районам</a></li>
+              <li><a href="#map3">Карта. Выбор по округам</a></li>
+              <li><a href="#map4">Карта. Выбор по месяцам</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <h2 id="charts">Графики</h2>
+      <div id="chart1" class="card">
+        <span>Количество начатых работ по месяцам</span>
+        <img
+          src="Количество начатых работ по месяцам.png"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div id="chart2" class="card">
+        <span>Количество выполненных работ по месяцам</span>
+        <img
+          src="Количество выполненных работ по месяцам.png"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div id="chart3" class="card">
+        <span>Количество активных работ по месяцам</span>
+        <img
+          src="Количество активных работ по месяцам.png"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div id="chart4" class="card">
+        <span>Доля работ, которые начались позже срока</span>
+        <img
+          src="Доля работ, которые начались позже срока.png"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div id="chart5" class="card">
+        <span>Количество работ, начатых в срок и позже срока</span>
+        <img
+          src="Количество работ, начатых в срок и позже срока.png"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div id="chart6" class="card">
+        <span>Доля работ, законченных в срок и позже срока</span>
+        <img
+          src="Доля работ, законченных в срок и позже срока.png"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div id="chart7" class="card">
+        <span>Количество работ, законченных в срок и позже срока</span>
+        <img
+          src="Количество работ, законченных в срок и позже срока.png"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div id="chart8" class="card">
+        <span>Количество ремонтируемых дорог по округам</span>
+        <img
+          src="Количество ремонтируемых дорог по округам.png"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div id="chart9" class="card">
+        <span>Количество ремонтируемых дорог по районам</span>
+        <img
+          src="Количество ремонтируемых дорог по районам.png"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div id="chart10" class="card">
+        <span>Длина ремонтируемых дорог по округам</span>
+        <img
+          src="Длина ремонтируемых дорог по округам.png"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div id="chart11" class="card">
+        <span>Длина ремонтируемых дорог по районам</span>
+        <img
+          src="Длина ремонтируемых дорог по районам.png"
+          width="100%"
+          height="100%"
+        />
+      </div>
+
+      <h2 id="maps">Карты</h2>
+      <div id="map1" class="card">
+        <span>Карта. Выбор по окргам</span>
+        <iframe src="map_adm_area.html" width="100%" height="600px"></iframe>
+      </div>
+      <div id="map2" class="card">
+        <span>Карта. Выбор по окргам</span>
+        <iframe src="map_district.html" width="100%" height="600px"></iframe>
+      </div>
+      <div id="map3" class="card">
+        <span>Карта. Выбор по статусу</span>
+        <iframe
+          src="map_works_status.html"
+          width="100%"
+          height="600px"
+        ></iframe>
+      </div>
+      <div id="map4" class="card">
+        <span>Карта. Выбор по месяцам</span>
+        <iframe src="map_months_area.html" width="100%" height="600px"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
