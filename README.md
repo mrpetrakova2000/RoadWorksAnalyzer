@@ -93,4 +93,4 @@
 Реализация дашборда по данным приведена в директории https://github.com/mrpetrakova2000/RoadWorksAnalyzer/tree/main/pipeline/analysis/20241226_210635. Для его просмотра необходимо скачать содержимое папки и запустить файл dashbord.html.
 
 ## 8. Оформление презентации/пояснительной записки о работе
-Презентация приведена по ссылке: **ДОБАВИТЬ**
+Презентация приведена по ссылке: https://docs.google.com/presentation/d/1Y5boTy1RLXO2p-xC3675uYd8DLomi8cAD--CxYnIlcg/edit?usp=sharing
